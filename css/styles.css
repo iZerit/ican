@@ -6,28 +6,44 @@
 }
 /* FONTS */
 @font-face {
-  font-family: 'DM Sans';
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('../fonts/Montserrat-Thin.ttf') format('ttf'),
+       url('../fonts/Montserrat-ThinItalic.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('../fonts/Montserrat-ExtraLight.ttf') format('ttf'),
+       url('../fonts/Montserrat-ExtraLightItalic.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/dm-sans-v10-latin-regular.woff2') format('woff2'),
-       url('../fonts/dm-sans-v10-latin-regular.woff') format('woff');
+  src: url('../fonts/Montserrat-LightItalic.ttf') format('ttf'),
+       url('../fonts/Montserrat-Light.ttf') format('ttf');
 }
 @font-face {
-  font-family: 'DM Sans';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('../fonts/dm-sans-v10-latin-500.woff2') format('woff2'),
-       url('../fonts/dm-sans-v10-latin-500.woff') format('woff');
+  src: url('../fonts/Montserrat-Medium.ttf') format('ttf'),
+       url('../fonts/Montserrat-MediumItalic.ttf') format('ttf');
 }
 @font-face {
-  font-family: 'DM Sans';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/dm-sans-v10-latin-700.woff2') format('woff2'),
-       url('../fonts/dm-sans-v10-latin-700.woff') format('woff');
+  src: url('../fonts/Montserrat-ExtraBold.ttf') format('ttf'),
+       url('../fonts/Montserrat-BoldItalic.ttf') format('ttf');
 }
 /* GLOBAL */
 html{
@@ -45,7 +61,7 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family:'DM Sans', "Arial", sans-serif;
+  font-family:'Montserrat';
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -86,6 +102,8 @@ a{
 }
 .top-box{
   background-color: rgb(202, 200, 200);
+  font-style: italic ;
+  font-weight: 200;
 }
 .top-list a{
   color: #000;
@@ -95,7 +113,7 @@ a{
 .top-list a img{
   width: 14px;
   height: 12px;
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
 /* MAIN CONTENT  */
@@ -129,7 +147,11 @@ a{
   padding-top: 15px;
   margin: 0 31px;
 }
+.navbar-light .navbar-toggler{
+  border-color: #000;
+}
 .sitenav-item-link {
+  font-weight: 700;
   font-size: 16px;
   line-height: 155%;
   text-decoration: none;
@@ -581,10 +603,12 @@ footer .site-logo-link {
   line-height: 21px;
   color: #444;
 }
+/*  MOBILNI  */
 .phone{
   display: none; 
   width: 100%;
   height: 100%;
+  background-color: #e8e9e9;
 }
 .phone .phone-links{
   display: flex;
@@ -594,27 +618,28 @@ footer .site-logo-link {
   position: relative;
 }
 .phone-link img{
-  max-width: 576px;
-  height: 350px;
+  width: 100%;
 }
 .phone-link .roboto{
   position: absolute;
   color: #fff;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: capitalize;
+  width: 100%;
   top: 65%;
-  left: 30%;
+  left: 0%;
 
 }
 .phone-link .mentalarifmetika{
   position: absolute;
   color: #fff;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: capitalize;
+  width: 100%;
   top: 65%;
-  left: 30%;
+  left: 0%;
 
 }
 .phone-link .english{
@@ -623,8 +648,9 @@ footer .site-logo-link {
   font-size: 35px;
   font-weight: bold;
   text-transform: capitalize;
+  width: 100%;
   top: 65%;
-  left: 30%;
+  left: 0%;
 
 }
 #top {
@@ -661,8 +687,18 @@ footer .site-logo-link {
 
 }
 @media screen and (max-width: 576px) {
-  .burger-menu{
-    display: block;
+  body{
+    background-color: #e8e9e9;
+  }
+  .site-logo-link{
+    font-size: 20px;
+  }
+  .navbar-toggler{
+    padding: 2px 5px;
+    font-size: 14px;
+  }
+  .navbar-light .navbar-toggler{
+    border-color: #000;
   }
   .hero{
     display: none;
@@ -712,6 +748,29 @@ footer .site-logo-link {
     border: 2px solid var(--bg-color);
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
     white-space: nowrap;
+  }
+  .ellipse {
+    align-items: center;
+    margin: 8px 0; 
+  }
+  .user-button {
+    margin: 0 5px 0 8px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 0.4px solid #C8C8C8;
+    background-color: #fff;
+  }
+  .user-img {
+    width: 16px;
+    height: 16px;
+  }
+  .followers {
+    font-size: 12px;
+    line-height: 155%;
+    color: var(--text-color);
+  }
+  .feature-links{
+    display: none;
   }
 }
 
