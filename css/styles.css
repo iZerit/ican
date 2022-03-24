@@ -115,6 +115,25 @@ a{
   height: 12px;
   margin-right: 2px;
 }
+.btn-secondary:hover{
+  color: #fff;
+  background-color: none;
+  border: none;
+}
+
+.btn-secondary:focus{
+  box-shadow: none;
+}
+.dropdown_language_but{
+  width: 60px;
+  height: 35px;
+}
+
+.dropdown-menu{
+  min-width: 1rem;
+  border: none;
+  /* transition: all .1s ease; */
+}
 
 /* MAIN CONTENT  */
 .main-content{
