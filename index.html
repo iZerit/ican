@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,34 +18,39 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   
   <div class="top-box">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 ml-3">
-          <ul class="top-list row justify-content-end">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-xs-6">
+          <ul class="top-list ">
             <li class="top-photo">
-              <a class="text-decoration-none top-link" href="#"><img src="imgs/phone_icon.svg" alt="img">
+              <a class="text-decoration-none top-link" href="#">
+                <i class="fa fa-phone" aria-hidden="true"></i>
                 495 888-88-88 </a>
             </li>
-            <a href="mailto:mail.ru" class="text-decoration-none ml-2">
-              <li class=" justify-content-end">
-                <img src="imgs/mail_icon.svg" alt="">
+            <li>
+              <a href="mailto:mail.ru" class="text-decoration-none">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
                 mail.ru
-              </li>
             </a>
-            <div class="dropdown dropdown_language d-flex justify-content-end">
-              <button class="btn btn-secondary dropdown-toggle dropdown_language_but" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                UZ
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">RU</a></li>
-                <li><a class="dropdown-item" href="#">ENG</a></li>
-              </ul>
-            </div>
-          </ul>
-         
+            </li>
+            
+           
+          </ul>          
+        </div>
+        <div class="col-xs-6">
+          <div class="dropdown">
+            <button class="btn drop-btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              RU
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">UZ</button></li>
+              <li><button class="dropdown-item" type="button">EN</button></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -57,8 +63,8 @@
   <header class="site-header" id="Home">
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
-        <a class="navbar-brand site-logo-link" href="#">I CAN</a>
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand site-logo-link" href="#"><img src="imgs/i.can.logo.jpg" width="65px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
@@ -469,7 +475,7 @@
       <div class="container">
         <div class="row"> 
           <div class="col-xs-12 phone-links text-center">
-            <a class="phone-link" href="roboto.html"><img src="imgs/mental-arifmetika.jpg" alt="roboto"><span class="roboto">robototexnika</span></a>
+            <a class="phone-link" href="roboto.html"><img src="imgs/Mental.arifmetika.jpg" alt="roboto"><span class="roboto">robototexnika</span></a>
             <div class="ellipse d-flex justify-content-between">
               <div class="subject-phone d-flex ">
                 <div class="observers d-flex">
@@ -487,9 +493,9 @@
                   <div class="followers">4.5</div>
                 </div>
               </div>
-              <a href="roboto.html"><button type="button" class="btn btn-info">To`liq</button>              </a>
+              <a href="roboto.html"><button type="button" class="phone_btn btn">To`liq</button>              </a>
             </div>
-            <a class="phone-link" href="#"><img src="imgs/mental-arifmetika.jpg" alt=""><span class="mentalarifmetika">mental arifmetika</span></a>
+            <a class="phone-link" href="#"><img src="imgs/maktabga.tayorlov.jpg" alt=""><span class="mentalarifmetika">mental arifmetika</span></a>
             <div class="ellipse d-flex justify-content-between">
               <div class="subject-phone d-flex ">
                 <div class="observers d-flex">
@@ -507,9 +513,9 @@
                   <div class="followers">4.5</div>
                 </div>
               </div>
-              <a href="roboto.html"><button type="button" class="btn btn-info">To`liq</button>              </a>
+              <a href="roboto.html"><button type="button" class="phone_btn btn">To`liq</button>              </a>
             </div>
-            <a class="phone-link" href="#"><img src="imgs/emglish.jpg" alt=""><span class="english">english</span></a>
+            <a class="phone-link" href="#"><img src="imgs/Mental.arifmetika.jpg" alt=""><span class="english">english</span></a>
             <div class="ellipse d-flex justify-content-between">
               <div class="subject-phone d-flex ">
                 <div class="observers d-flex">
@@ -527,7 +533,7 @@
                   <div class="followers">4.5</div>
                 </div>
               </div>
-              <a href="roboto.html"><button type="button" class="btn btn-info">To`liq</button>              </a>
+              <a href="roboto.html"><button type="button" class="phone_btn btn ">To`liq</button>              </a>
             </div>
             <a class="phone-link" href="#"><span class="phone-subject5"></span></a>
           </div>
@@ -544,7 +550,7 @@
     <div class="container footer-container">
       <div class="row footer-list">
         <div class="col-lg-4 footer-left">
-          <a class="site-logo-link" href="#">Education</a>
+          <a class="site-logo-link" href="#">I CAN</a>
           <p class="footer-left-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod
             nullam the elementum. Urna, posuere nisi sit gravid.</p>
           <h3 class="footer-heading">Follow Us</h3>
@@ -616,19 +622,19 @@
           </ul>
         </div>
         <div class="col-lg-3 contact-us">
-          <h3 class="contact-us-heading">Contact Us</h3>
+          <h3 class="contact-us-heading mt-4">Contact Us</h3>
           <div class="company-adress">230,Mirpur Area, Mirpur 10, Dhaka,Bangladesh</div>
           <div class="company-source">
-            <img class="company-source-img" src="imgs/call.svg" alt="" width="20" height="20">
-            <div class="company-source-text">+017 4845 7269</div>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <div class="company-source-text ml-1">+017 4845 7269</div>
           </div>
           <div class="company-source">
-            <img class="company-source-img" src="imgs/gmail.svg" alt="" width="20" height="20">
-            <div class="company-source-text">info@gmail.com</div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <div class="company-source-text ml-1">info@gmail.com</div>
           </div>
           <div class="company-source">
-            <img class="company-source-img" src="imgs/domain.svg" alt="" width="20" height="20">
-            <div class="company-source-text">www.yourdomain.com</div>
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <div class="company-source-text ml-1">www.yourdomain.com</div>
           </div>
         </div>
       </div>
